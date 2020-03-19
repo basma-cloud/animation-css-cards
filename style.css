@@ -1,0 +1,43 @@
+body{
+    background-color: gray;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    transform: skew(-4deg);
+
+}
+li{
+    transform:rotateZ(10deg);
+    padding:70%;
+    list-style:none;
+}
+.details{
+    position: absolute;
+    height: 90%;
+    width:75%;
+    background-color: pink;
+    border:1.5px solid;
+    border-radius: 2vw;
+    filter: drop-shadow(2px 30px 3px rgba(0, 0, 0, 0.4));
+}
+
+img{
+   
+   height:90%;
+   width:100%;
+
+}
+li:hover{
+    z-index:4;
+}
+li:hover .details{
+    transform:scale(1.2);
+    transition-duration: .7s;
+
+}
+img:hover{
+    width:100%;
+    transform:translateY(17%);
+    transition-duration: .7s;
+}
